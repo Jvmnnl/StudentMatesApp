@@ -1,0 +1,10 @@
+<% if (goals) { %> 
+    <div> 
+        <p><b>Goal:</b><br> <%=goals.goal %></p> 
+        <p><b>Target Date:</b><br> <%= new Date(goals.targetDate).toLocaleDateString() %></p> 
+        <p><b>Goal Description:</b><br> <%=goals.goalDescription %></p> 
+    </div> 
+  
+    <% } else { %> 
+        <p>No goal found.</p> 
+    <%} %>
